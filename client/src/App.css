@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Enriqueta:700');
+
+.App {
+  text-align: center;
+}
+
+.App-Header {
+  margin-top: 40px;
+}
+
+.App-underlay {
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  z-index: -9;
+}
+
+.title {
+  font-size: 5rem;
+  font-family: 'Enriqueta', serif;
+}
+
+.subtitle {
+  color: white;
+  font-size: 1rem;
+}
