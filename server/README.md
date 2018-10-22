@@ -6,11 +6,6 @@ layout: Doc
 
 The idea behind the `borrower-identity-service` directory is that in case you want to create a service containing multiple resources e.g. bloom identity jsons.
 
-## Use-cases
-
-- API for a Web Application
-- API for a Mobile Application
-
 ## Setup
 
 ```bash
@@ -42,11 +37,11 @@ region: us-east-1
 api keys:
   None
 endpoints:
-  POST - https://45wf34z5yf.execute-api.us-east-1.amazonaws.com/dev/borrower-identity-service
-  GET - https://45wf34z5yf.execute-api.us-east-1.amazonaws.com/dev/borrower-identity-service
-  GET - https://45wf34z5yf.execute-api.us-east-1.amazonaws.com/dev/borrower-identity-service/{id}
-  PUT - https://45wf34z5yf.execute-api.us-east-1.amazonaws.com/dev/borrower-identity-service/{id}
-  DELETE - https://45wf34z5yf.execute-api.us-east-1.amazonaws.com/dev/borrower-identity-service/{id}
+  POST - https://xxx.execute-api.us-east-1.amazonaws.com/dev/borrower-identity-service
+  GET - https://xxx.execute-api.us-east-1.amazonaws.com/dev/borrower-identity-service
+  GET - https://xxx.execute-api.us-east-1.amazonaws.com/dev/borrower-identity-service/{id}
+  PUT - https://xxx.execute-api.us-east-1.amazonaws.com/dev/borrower-identity-service/{id}
+  DELETE - https://xxx.execute-api.us-east-1.amazonaws.com/dev/borrower-identity-service/{id}
 
 ## Usage
 
