@@ -9,9 +9,9 @@ class Bloom extends Component {
 
   render(){
     const requestData = {
-      action: "request_attestation_data",
-      token: '0x8f31e48a585fd12ba58e70e03292cac712cbae39bc7eb980ec189aa88e24d041',
-      url: "https://TODO:AWSENDPOINT/borrower-identity-service/create",
+      action: 'request_attestation_data',
+      token: '',
+      url: '',
       org_logo_url: 'https://bloom.co/images/notif/bloom-logo.png',
       org_name: 'RCN',
       org_usage_policy_url: 'https://bloom.co/legal/terms',
@@ -23,7 +23,7 @@ class Bloom extends Component {
       <div>
         <div className="App-Header">
         </div>
-        {<RequestQRCode requestData={requestData} size={300} />}
+        {<RequestQRCode requestData={requestData} size={200} />}
       </div>
     );
  }

@@ -20,10 +20,10 @@ app.use(cors());
 app.post('/api/receiveData', async (req, res) => {
   try {
     console.log(`Attempting to verify ${JSON.stringify(req.body.data)}`)
-    
+
     return res.status(200).json({
       success: true,
-      token: req.body.token,
+      body: JSON.stringify(req.body),
     })
   } catch (error) {
     console.log('Encountered an error while receiving data', {
