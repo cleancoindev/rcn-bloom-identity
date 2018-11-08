@@ -1,7 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import { Form, Button } from 'reactstrap';
 import Bloom from "../pages/Bloom";
-import { Redirect } from "react-router-dom";
 
 class AttestationTypeForm extends Component {
  
