@@ -1,8 +1,6 @@
-const { StringDecoder } = require('string_decoder');
 const express = require('express')
 const app = express()
 const port = 3001
-const decoder = new StringDecoder('utf8');
 
 const ethUtil = require('ethereumjs-util')
 const sortObject = require('sortobject')
@@ -93,6 +91,5 @@ app.post('/api/receiveData', (req, res, next) => {
       })
     )
     return error
-
   }
 })
