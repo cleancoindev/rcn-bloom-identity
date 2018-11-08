@@ -2,10 +2,10 @@
   "name": "server",
   "version": "0.0.1",
   "description": "rcn-bloom-identity",
-  "main": "borrower-identity-service/server.js",
+  "main": "borrower-identity-service/server.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node borrower-identity-service/server.js"
+    "start": "node borrower-identity-service/server.ts"
   },
   "author": "jpgonzalezra",
   "license": "MIT",
@@ -14,9 +14,11 @@
     "body-parser": "^1.18.3",
     "cors": "^2.8.4",
     "dotenv": "^6.0.0",
-    "express": "^4.16.3",
     "helmet": "^3.13.0",
     "ngrok": "^3.1.0",
-    "uuid": "^2.0.3"
+    "uuid": "^2.0.3",
+    "ethereumjs-util": "^6.0.0",
+    "express": "^4.16.4",
+    "sortobject": "^1.1.1"
   }
 }
