@@ -19,13 +19,6 @@ provider:
       Resource: "arn:aws:dynamodb:${opt:region, self:provider.region}:*:table/${self:provider.environment.DYNAMODB_TABLE}"
 
 functions:
-  server:
-    handler: borrower-identity-service/server.server
-    events:
-      - http:
-          path: borrower-identity-service
-          method: post
-          cors: true
 
   create:
     handler: borrower-identity-service/create.create
@@ -49,22 +42,6 @@ functions:
       - http:
           path: borrower-identity-service/{id}
           method: get
-          cors: true
-
-  update:
-    handler: borrower-identity-service/update.update
-    events:
-      - http:
-          path: borrower-identity-service/{id}
-          method: put
-          cors: true
-
-  delete:
-    handler: borrower-identity-service/delete.delete
-    events:
-      - http:
-          path: borrower-identity-service/{id}
-          method: delete
           cors: true
 
 resources:

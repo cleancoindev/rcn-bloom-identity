@@ -2,18 +2,27 @@
   "name": "server",
   "version": "0.0.1",
   "description": "rcn-bloom-identity",
-  "main": "borrower-identity-service/server.ts",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node borrower-identity-service/server.ts"
+    "start": "node borrower-identity-service/server.ts",
+    "watch": "tsc -w",
+    "lint": "tslint '*.ts'"
   },
   "author": "jpgonzalezra",
   "license": "MIT",
+  "devDependencies": {
+    "@types/aws-sdk": "0.0.42",
+    "@types/node": "^7.0.5",
+    "tslint": "^5.5.0",
+    "tslint-config-standard": "^6.0.1",
+    "typescript": "^2.4.2"
+  },
   "dependencies": {
-    "@bloomprotocol/share-kit": "^2.0.1",
+    "@bloomprotocol/share-kit": "^2.1.1",
     "ethereumjs-util": "^6.0.0",
     "express": "^4.16.4",
     "sortobject": "^1.1.1",
-    "uuid": "^2.0.3"
+    "uuid": "^3.1.0"
   }
 }
